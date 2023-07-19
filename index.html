@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,45 +20,39 @@
     </nav>
 
     <div class="task">
-        <input type="text" class="input" placeholder="Enter the Task here" >
+        <input type="text" class="input" placeholder="Enter the Task here">
+        <select class="select1">
+            <option value="open" selected>OPEN</option>
+            <option value="prg">PROGRESS</option>
+            <option value="review">REVIEW</option>
+            <option value="done">DONE</option>
+        </select>
         <button class="task-btn">Task</button>
     </div>
 
     <div class="container-fluid">
         <div class="taskm">
-            <div class="box open">
+            <div class="box open" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <span>OPEN</span>
-                
+
             </div>
-    
-            <div class="box" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+            <div class="box prg" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <span>IN PROGRESS</span>
             </div>
-    
-            <div class="box" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+            <div class="box review" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <span>IN REVIEW</span>
             </div>
-            
-            <div class="box" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+            <div class="box done" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <span>DONE</span>
             </div>
 
         </div>
-        
+
     </div>
 
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-        crossorigin="anonymous"></script>
     <script src="./App.js"></script>
 </body>
 
